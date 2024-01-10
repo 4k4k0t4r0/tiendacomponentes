@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+          
+  
+  
+  
+  <modelVersion>4.0.0</modelVersion>
+          
+  
+  
+  
+  <groupId>com.roddy</groupId>
+          
+  
+  
+  
+  <artifactId>tiendacomponentes</artifactId>
+          
+  
+  
+  
+  <version>0.0.1-SNAPSHOT</version>
+          
+  
+  
+  
+  <packaging>pom</packaging>
+        
+  
+  
+  
+  <modules>
+                  
+    
+    
+    
+    <module>tiendacomponentes-entities</module>
+                  
+    
+    
+    
+    <module>tiendacomponentes-data</module>
+              
+    
+    
+    <module>tiendacomponentes-services</module>
+          
+    
+    <module>tiendacomponentes-web</module>
+      
+  </modules>
+      
+
+
+</project>
