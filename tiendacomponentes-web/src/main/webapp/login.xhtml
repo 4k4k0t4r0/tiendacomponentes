@@ -1,38 +1,37 @@
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:h="http://java.sun.com/jsf/html"
- 	  xmlns:p="http://primefaces.org/ui">
-      
-      
-      <h:head>
-      	<!--  <h:outputStylesheet library="css" name="styles.css"></h:outputStylesheet> -->
-      	<meta name="viewport" content="width=device-width, user-scalable=no"></meta>
-      </h:head>
-      
-      <h:body>
-      	<div class="ui-fluid">
-      		<h:form id="formLogin">
-      		
-      			<p:growl id="growl"/>  
-      		
-      			<p:panel id="pnlLogin" header="Inicio de Sesión" style="text-align: center">
-      			
-      				<p:graphicImage name="imgs/user.png" width="20%"/>
-      			
-      				<p:panelGrid id="pnlGridLogin" columns="1" columnClasses="ui-g-12 ui-md-12,ui-g-12 ui-md-12" layout="grid" styleClass="ui-panelgrid-blank ui-fluid">
-      			
-	      				<p:outputLabel value="Usuario: " styleClass="colorText" for="txtUsuario" style="float: left"></p:outputLabel>
-	      				<p:inputText id="txtUsuario" value="#{loginController.usuario}" required="true" requiredMessage="El usuario es requerido"></p:inputText>
-	      				
-	      				<p:outputLabel value="Contraseña: " styleClass="colorText" for="txtPassword" style="float: left"></p:outputLabel>
-	      				<p:password id="txtPassword" value="#{loginController.password}" required="true" requiredMessage="La contraseña es requerida"></p:password>      				
-	      			
-	      				<p:outputLabel></p:outputLabel>
-	      				<p:commandButton value="Entrar" action="#{loginController.ingresar}" update="pnlGridLogin, growl"></p:commandButton>
-	      			</p:panelGrid>
-      			</p:panel>      		
-      		</h:form>
-      	</div>
-      </h:body>
-      
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+        <h:outputStylesheet library="css" name="login.css"/>
+        <title>tienda</title>
+    </h:head>
+
+    <h:body styleClass="login-body">
+        <div class="login-container">
+        
+            <h:form id="formLogin">
+                <p:growl id="growl" showDetail="true" skipDetailIfEqualsSummary="true"/>	
+                <p:panel id="pnlLogin" styleClass="login-panel">
+                    <h1 class="login-title">LOGIN</h1>
+                    <p:graphicImage name="imgs/logo.png" style="width: 100%;"/>
+                    <p:panelGrid id="pnlGridLogin" columns="1" styleClass="ui-panelgrid-blank ui-fluid">"
+                        <p:outputLabel value="Usuario" styleClass="colorText"/>
+                        <p:inputText id="txtUsuario" value="#{loginController.usuario}" required="true" requiredMessage="El usuario es requerido" styleClass="ui-inputtext"/>
+                        <p:outputLabel value="Contraseña" styleClass="colorText"/>
+                        <p:password id="txtPassword" value="#{loginController.password}" required="true" requiredMessage="La contraseña es requerida" styleClass="ui-inputtext"/>
+                        <p:commandButton value="Iniciar sesión" action="#{loginController.entrar}" update="pnlGridLogin,growl" styleClass="ui-button ui-button-text-only login-button"/>
+                        
+                        
+                    </p:panelGrid>
+                    <p:messages showDetail="false" showSummary="true" autoUpdate="true" closable="true" styleClass="ui-message-error"/>
+                </p:panel>
+            </h:form>
+        </div>
+    </h:body>
+
 </html>
+

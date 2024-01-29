@@ -1,0 +1,161 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+body, h:body, h:form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+
+.ui-panelgrid .ui-panelgrid-cell {
+    background-color: transparent !important;
+    border: none !important;
+    font-family: 'Netflix Sans';
+}
+
+.ui-panel .ui-panel-content {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 8px !important;
+    padding: 20px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+    max-width: 250px !important; /* Ajuste del tamaño del panel principal */
+    width: 100% !important;
+    margin: 2% auto !important;
+    text-align: center !important;
+    display: flex; /* Añadido para utilizar flexbox */
+    flex-direction: column; /* Añadido para apilar elementos verticalmente */
+    align-items: center; /* Añadido para centrar los elementos horizontalmente */
+    height: 92vh;
+    
+}
+
+
+
+.ui-panel .ui-panel-title {
+    font-size: 1.5em; /* Ajuste del tamaño de la fuente para resaltar */
+    color: #fff; /* Color del texto resaltado */
+    margin-bottom: 20px; /* Espacio adicional debajo del título */
+}
+
+.ui-inputtext {
+    width: 100% !important;
+    margin-top: 10px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    padding: 8px !important;
+}
+
+.ui-inputtext, .ui-button {
+    margin-bottom: 10px !important;
+}
+
+
+
+body .ui-button{
+	    background-color: #e50914 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 12px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+    width: 100% !important;
+    font-family: 'Netflix Sans';
+}
+
+.ui-button.ui-button-text-only .ui-button-text:hover {
+    background-color: #ff1f2d !important;
+}
+
+
+/* Agrega más estilos según sea necesario */
+.colorText {
+    color: #fff;
+}
+
+
+.login-title {
+    font-size: 3em;
+    color: #ff1f2d;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.5;
+    animation: reveal-letters 2s ease-in-out 0.5s forwards;
+    letter-spacing: 9.5px;
+    margin-top:-10px;
+    
+}
+
+@keyframes reveal-letters {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        letter-spacing: 12px;
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        letter-spacing: 8px;
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        letter-spacing: 4px;
+    }
+    40% {
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        letter-spacing: 2px;
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        letter-spacing: 0;
+    }
+}
+
+.login-title:hover {
+    animation: hover-glow 0.5s ease-in-out;
+}
+
+@keyframes hover-glow {
+    0% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+
+
+body .ui-widget:not(.pi), body .ui-widget .ui-widget:not(.pi) {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+
+
+
